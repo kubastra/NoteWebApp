@@ -22,7 +22,7 @@ Frontend: JavaScript, HTML, CSS
 
 Backend: Java
 
-Baza danych: [Wybierz odpowiednią bazę danych]
+Baza danych: h2
 
 📦 Instalacja
 1. Klonowanie repozytorium
