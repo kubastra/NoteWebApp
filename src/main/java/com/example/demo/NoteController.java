@@ -2,13 +2,16 @@ package com.example.demo;
 
 import java.util.List;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+@CrossOrigin(origins = "http://localhost:3000")
 @RestController
 public class NoteController {
 
@@ -23,12 +26,12 @@ public class NoteController {
 		return noteService.getAllNotes();
 	}
 	
-	@PutMapping("/notes")
+	@PostMapping("/notes")
 	public Note addNotes(@RequestBody Note note) {
 		return noteService.addNote(note);
 	}
 	
-	@DeleteMapping("/notes{id}")
+	@DeleteMapping("/notes/{id}")
 	public void deleteNotes(@PathVariable Long id) {
 		noteService.deleteNote(id);
 	}
