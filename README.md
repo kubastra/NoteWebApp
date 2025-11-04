@@ -1,6 +1,6 @@
 NoteWebApp
 
-Aplikacja webowa do tworzenia i zarządzania notatkami.
+Aplikacja webowa do tworzenia i zarządzania notatkami. //brak podpiętego backendu należy uruchomić osobno
 
 📝 Opis
 
